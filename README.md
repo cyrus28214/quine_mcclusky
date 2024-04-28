@@ -1,6 +1,6 @@
 # quine_mcclusky
 
-This is a Rust implementation of the Quine-McClusky algorithm for minimizing Boolean functions.
+This is a Rust implementation of the Quine-McClusky algorithm and Petrick's method for optimizing Boolean functions.
 
 [Quine McClusky Algorithm](https://en.wikipedia.org/wiki/Quine%E2%80%93McCluskey_algorithm)
 
