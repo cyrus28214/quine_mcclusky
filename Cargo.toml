@@ -1,0 +1,7 @@
+[package]
+name = "quine_mccluskey"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bitset-core = "0.1.1"
