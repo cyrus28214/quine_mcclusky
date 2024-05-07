@@ -77,10 +77,7 @@ fn main() {
                 .filter(|i| sol.chars().nth(*i).unwrap() == '1');
             let mut formula = to_formula(used_indices.clone().map(|i| &prime_implicants[i]).collect());
             if formula.is_empty() { formula = "1".to_string(); }
-            let mut total_cost = used_indices.clone().map(|i| gate_input_costs[i]).sum::<usize>();
-            if used_indices.count() > 1 {
-                total_cost += 1;
-            }
+            let total_cost = used_indices.clone().map(|i| gate_input_costs[i]).sum::<usize>();
             (formula, total_cost)
         }
     );
